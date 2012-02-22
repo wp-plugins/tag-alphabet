@@ -20,5 +20,9 @@ This plugin display all your post tags in vertical columns prefixed with alphabe
 
 == Changelog ==
 
+= 1.1 =
+* fixed rounding warning
+
 = 1.0 =
 * Stable Version
+
