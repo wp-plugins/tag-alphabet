@@ -4,7 +4,7 @@ Donate link: http://www.pressessentials.com/
 Tags: Tags, Alphabet
 Requires at least: 2
 Tested up to: 3.3
-Stable tag: 1
+Stable tag: 1.1
 
 This plugin display all your post tags in vertical columns prefixed with alphabet letters.
 

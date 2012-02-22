@@ -3,7 +3,7 @@
 Plugin Name: Essentials Tag Alphabet
 Plugin URI: http://www.pressessentials.com/
 Description: This plugin adds an alphabet listing of your post tags to the page.
-Version: 1.0
+Version: 1.1
 Author: Patriek Jeuriens
 Author URI: http://www.pressessentials.com/
 
@@ -67,12 +67,15 @@ function pss_tagalphabet_func($atts) {
 				if ($counter > ($tagcount)){
 					$list .= '</div><!-- end columns -->';
 				}
+
+				if  ($counter != round($columnbreak * $columncount, 0,PHP_ROUND_HALF_UP) -1){
 				$list .= "\n\t". '<div class="alphabet-capital">' . apply_filters( 'the_title', $letter ) . '</div>';
 				$list .= "\n\t" . '<ul class="alphabet">';
+				}
 				
 				foreach( $tags as $tag ) {
 					$counter++;	
-					if  ($counter >= ($columnbreak * $columncount) +1){
+					if  ($counter >= ($columnbreak * $columncount)){
 						$list .= '</div><div class="alphabet-column" style="'. $style .'">';
 						$list .= "\n\t". '<div class="alphabet-capital">' . apply_filters( 'the_title', $letter ) . '</div>';
 						$list .= "\n\t" . '<ul class="alphabet">';		
