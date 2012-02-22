@@ -68,7 +68,7 @@ function pss_tagalphabet_func($atts) {
 					$list .= '</div><!-- end columns -->';
 				}
 
-				if  ($counter != round($columnbreak * $columncount, 0,PHP_ROUND_HALF_UP) -1){
+				if  ($counter != ceil($columnbreak * $columncount) -1){
 				$list .= "\n\t". '<div class="alphabet-capital">' . apply_filters( 'the_title', $letter ) . '</div>';
 				$list .= "\n\t" . '<ul class="alphabet">';
 				}
