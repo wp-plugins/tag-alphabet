@@ -3,7 +3,7 @@
 Plugin Name: Essentials Tag Alphabet
 Plugin URI: http://www.pressessentials.com/
 Description: This plugin adds an alphabet listing of your post tags to the page.
-Version: 0.0.2
+Version: 1.0
 Author: Patriek Jeuriens
 Author URI: http://www.pressessentials.com/
 
